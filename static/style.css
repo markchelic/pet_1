@@ -1,0 +1,224 @@
+/* Reset and base styles  */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+/*          end         */
+
+html {
+    height: 700px;
+    width: auto;
+}
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+header {
+    display: block;
+    height: 10%;
+    width: 100%;
+    background-color: rgba(239, 247, 254, 0.991);
+    transition: 0.2s;
+    box-shadow: 0px 0px 8px 0px #000;
+}
+
+header:hover {
+    box-shadow: 5px 5px 20px 5px #000;
+}
+
+nav {
+    display: flex;
+    height: 100%;
+    width: auto;
+    float: left;
+    padding-left: 10%;
+    align-items: center;
+
+
+}
+
+.wer_im {
+
+    float: left;
+    
+    
+}
+
+.wer_im p {
+    font-style: normal;
+    font-weight: bolder;
+    font-size: x-large;
+    transition: 0.1s;
+}
+
+.wer_im p:hover {
+    font-size: xx-large;
+}
+
+
+
+
+
+
+
+.wer_im2 {
+
+    float: left;
+    
+    
+}
+
+
+
+/*         */
+
+
+.main_div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.map_btn_container {
+    
+    align-items: center;
+    display: none;
+    width: 60%;
+    height: 90%;
+    border-radius: 8%;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0 0 900000px rgba(0, 0, 0, 1);
+    
+}
+.mpb {
+    display: flex;
+    padding-left: 10%;
+    width: 90%;
+    height: 400px;
+}
+
+#map {
+    display: none;
+    padding-top: 200px;
+    height: 100%;
+    width: 100%;
+
+}
+
+.map_btn {
+    background: #943f97;
+    color: white;
+    height: 3em;
+    padding: 0 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    cursor: pointer;
+    border-radius: 1.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.map_btn:hover {
+    background: #ae58b1;
+    box-shadow: 0 0 5px .5px gray;
+}
+
+.map_btn:active {
+    background: #943f97;
+    box-shadow: none;
+}

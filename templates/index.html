@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src='https://kit.fontawesome.com/f77600b8df.js' crossorigin='anonymous'></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <button class="wer_im"><p>Карта</p></button>
+            
+        </nav>
+    </header>
+    <img src="https://img3.fonwall.ru/o/sa/landscape-nature-grass-horizon-zahj.jpeg?route=mid&h=750">
+    <div class="main_div">
+
+        <div class="map_btn_container">
+            <button class="map_btn">
+                <p>Де я?</p>
+            </button>
+            <div class="mpb">
+                <div id='map'></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    
+
+
+</body>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/openlayers/2.11/OpenLayers.js'></script>
+</html>
